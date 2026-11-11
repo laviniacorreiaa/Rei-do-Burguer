@@ -243,6 +243,8 @@
 
         .menu {
             background: var(--creme);
+            padding-bottom: 0px;
+            padding-top: 45px;
         }
 
 
@@ -250,6 +252,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 28px;
+            padding-bottom: 30px;
         }
 
 
@@ -509,6 +512,7 @@
 
             .benefits {
                 justify-content: flex-start;
+                display: block;
             }
 
            
