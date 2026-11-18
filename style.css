@@ -93,7 +93,6 @@
             color: white;
         }
 
-
         .btn-marrom:hover {
             background: var(--amarelo);
             transform: translateY(-3px);
@@ -187,20 +186,25 @@
             flex-wrap: wrap;
             gap: 25px;
             background: var(--amarelo);
+            
         }
 
 
         .benefit {
             font-weight: 800;
-            font-size: 15px;
+            font-size: 14.5px;
             display: flex;
             align-items: center;
             gap: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-style: var(--marrom);
         }
 
 
         .benefit span {
-            font-size: 23px;
+            font-size: 22px;
+            font-style: var(--marrom);
         }
 
 
@@ -305,7 +309,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-top: 20px;
+
         }
 
 
@@ -502,19 +506,30 @@
             header {
                 flex-direction: column;
                 gap: 10px;
-                height: 175px;
+                height: 130px;
+                padding-top: 10px;
+                position: sticky;
             }
 
 
             nav {
-                gap: 10px;
                 flex-wrap: wrap;
                 justify-content: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;      
+                gap: 5px;               
+                width: 100%;
             }
 
 
             nav a {
-                font-size: 15px;
+                font-size: 11px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                white-space: nowrap; 
+
             }
 
 
@@ -544,5 +559,31 @@
                 display: block;
             }
 
-           
+            .btn {
+                display: inline-block;
+                border-radius: 6px;
+                padding: 10px 10px;
+                text-decoration: none;
+                font-weight: 700;
+                transition: .3s;
+                cursor: pointer;
+                border: none;
+        }
+
+            .btn-marrom {
+            display: none;
+            }
+
+            .btn-marrom-nav {
+            background: var(--marrom);
+            color: white;
+            border-radius: 8px;
+            
+        }
+
+        .btn-marrom-nav:hover {
+            background: var(--amarelo);
+            transform: translateY(-3px);
+        }
+
         }
